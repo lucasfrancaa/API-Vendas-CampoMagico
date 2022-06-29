@@ -1,7 +1,7 @@
 # API-Vendas-CampoMagico
 
 ## Descrição
-Aplicação back-end que simula um sistema de loja onde é possível criar, listar, atualizar e excluir funcionário, produto e venda.
+Aplicação back-end que simula um sistema de loja onde é possível criar, listar, atualizar e excluir funcionário, produto e venda. Todas as vendas possuem produto e funcionário através do relacionamento entre as entidades.
 
 ## Tecnologias utilizadas
 - Java
