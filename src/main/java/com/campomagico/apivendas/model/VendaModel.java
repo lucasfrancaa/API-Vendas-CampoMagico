@@ -1,5 +1,7 @@
 package com.campomagico.apivendas.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -53,12 +55,12 @@ public class VendaModel implements Serializable {
         this.valorTotal = valorTotal;
     }
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "funcionario_id")
     private FuncionarioModel funcionarioModel;
 
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "produto_id")
     private ProdutoModel produtoModel;
 
